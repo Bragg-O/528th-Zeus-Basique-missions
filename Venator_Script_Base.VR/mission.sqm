@@ -5,29 +5,29 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=33;
+	toggles=37;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=6586;
+		nextID=6591;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1433;
+		nextID=1523;
 	};
 	class Camera
 	{
-		pos[]={469.81891,1592.2026,690.38306};
-		dir[]={-0.054771688,-0.49178779,-0.86903626};
-		up[]={-0.030931726,0.87072593,-0.49079248};
-		aside[]={-0.99806309,4.1700196e-007,0.062903233};
+		pos[]={474.10223,1584.1449,650.62543};
+		dir[]={-0.022946477,-0.32172519,0.94662333};
+		up[]={-0.0077970023,0.94685328,0.32158002};
+		aside[]={0.99977469,2.2720706e-006,0.024234693};
 	};
 };
 binarizationWanted=0;
-sourceName="Venator_TRAC";
+sourceName="Venator_Script_Base";
 addons[]=
 {
 	"A3_Modules_F_Multiplayer",
@@ -814,7 +814,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=20;
+				items=21;
 				class Item0
 				{
 					dataType="Logic";
@@ -1556,7 +1556,7 @@ class Mission
 									};
 									id=5010;
 									type="442_door_lock";
-									atlOffset=1581.323;
+									atlOffset=3.8620605;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -15998,7 +15998,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="Obj";
-					state=1;
 					class Entities
 					{
 						items=1266;
@@ -34065,7 +34064,7 @@ class Mission
 							};
 							id=1874;
 							type="442_2way_rep";
-							atlOffset=1585.4275;
+							atlOffset=7.9665527;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38746,7 +38745,7 @@ class Mission
 							};
 							id=2037;
 							type="plp_PaneTinted_5x1_90";
-							atlOffset=1578.8303;
+							atlOffset=1.3693848;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38780,7 +38779,7 @@ class Mission
 							};
 							id=2038;
 							type="plp_PaneTinted_5x1_90";
-							atlOffset=1578.8303;
+							atlOffset=1.3693848;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38814,7 +38813,7 @@ class Mission
 							};
 							id=2039;
 							type="plp_PaneTinted_5x1_90";
-							atlOffset=1578.8303;
+							atlOffset=1.3693848;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38848,7 +38847,7 @@ class Mission
 							};
 							id=2040;
 							type="plp_PaneTinted_5x1_90";
-							atlOffset=1578.8303;
+							atlOffset=1.3693848;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39596,7 +39595,7 @@ class Mission
 							};
 							id=2103;
 							type="442_2way_rep";
-							atlOffset=1585.4275;
+							atlOffset=7.9665527;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -65396,7 +65395,7 @@ class Mission
 							};
 							id=6119;
 							type="UserTexture1m_F";
-							atlOffset=1585.4519;
+							atlOffset=7.9909668;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -67910,9 +67909,44 @@ class Mission
 					id=6187;
 					atlOffset=4.9020996;
 				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={474.29901,1582.431,654.30298};
+						angles[]={0,1.5707964,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="respawnplatform";
+						disableSimulation=1;
+					};
+					id=6590;
+					type="442_4way_rep";
+					atlOffset=1577.431;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=0;
-			atlOffset=3.0887451;
+			atlOffset=3.5335693;
 		};
 		class Item1
 		{
@@ -75230,6 +75264,7 @@ class Mission
 					{
 					};
 					id=6517;
+					atlOffset=-5;
 				};
 				class Item2
 				{
@@ -80197,6 +80232,7 @@ class Mission
 					{
 					};
 					id=6526;
+					atlOffset=-5;
 				};
 				class Item7
 				{
@@ -80495,6 +80531,7 @@ class Mission
 					{
 					};
 					id=6577;
+					atlOffset=-5;
 				};
 				class Item8
 				{
@@ -80699,6 +80736,7 @@ class Mission
 				};
 			};
 			id=6515;
+			atlOffset=1438.6547;
 		};
 	};
 	class Connections
