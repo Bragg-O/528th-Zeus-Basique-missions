@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1020;
+		nextID=1021;
 	};
 	class LayerIndexProvider
 	{
-		nextID=837;
+		nextID=1053;
 	};
 	class Camera
 	{
-		pos[]={26.60881,7.3721647,13.545333};
-		dir[]={0.74652153,-0.6386956,0.18712083};
-		up[]={0.61958039,0.76939511,0.15530397};
-		aside[]={0.24315998,2.5480404e-007,-0.97010499};
+		pos[]={-6.0077195,30.327562,6.8278942};
+		dir[]={0.67624468,-0.73637098,0.021422075};
+		up[]={0.73600596,0.67657584,0.023315366};
+		aside[]={0.031662587,1.1396514e-007,-0.9995032};
 	};
 };
 binarizationWanted=0;
@@ -31,10 +31,10 @@ sourceName="Script_Base";
 addons[]=
 {
 	"A3_Modules_F_Curator_Curator",
-	"Legion_292th",
-	"Legion_80th",
+	"Compagnie_292th",
+	"Compagnie_80th",
 	"ls_flags",
-	"Legion_80x292",
+	"Compagnie_528th",
 	"A3_Weapons_F",
 	"JLTS_weapons_Core",
 	"SWLB_radios",
@@ -48,7 +48,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_Argo_Commercial_Billboards",
 	"442_misc_box",
-	"OPTRE_UNSC_Structure_Military",
+	"3AS_Prop_Terminals",
 	"A3_Structures_F_Orange_Humanitarian_Flags",
 	"442_structures_hallway"
 };
@@ -66,15 +66,15 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="Legion_292th";
-			name="Legion_292th";
-			author="292th";
+			className="Compagnie_292th";
+			name="Compagnie_292th";
+			author="528th";
 		};
 		class Item2
 		{
-			className="Legion_80th";
-			name="Legion_80th";
-			author="80th";
+			className="Compagnie_80th";
+			name="Compagnie_80th";
+			author="528th";
 		};
 		class Item3
 		{
@@ -84,9 +84,9 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="Legion_80x292";
-			name="Legion_80x292";
-			author="Bragg for 528th";
+			className="Compagnie_528th";
+			name="Compagnie_528th";
+			author="528th";
 		};
 		class Item5
 		{
@@ -168,8 +168,8 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="OPTRE_UNSC_Structure_Military";
-			name="OPTRE_UNSC_Structure_Military";
+			className="3AS_Prop_Terminals";
+			name="3AS_Prop_Terminals";
 		};
 		class Item18
 		{
@@ -8864,7 +8864,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={58,5.9210076,16};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=4;
@@ -8912,7 +8912,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={66,5.9210076,16};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=4;
@@ -8960,7 +8960,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={62,5.9210076,16};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9296,7 +9296,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={48,5.9210076,32};
-						angles[]={0,4.712389,-0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=5;
@@ -9408,7 +9408,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={80,5.9210076,32};
-						angles[]={0,4.712389,-0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=5;
@@ -9541,7 +9541,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={48,5.920022,15.996878};
-						angles[]={0,4.7123895,-0};
+						angles[]={0,4.7123895,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9603,7 +9603,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={52,5.920022,15.996878};
-						angles[]={0,4.712389,-0};
+						angles[]={0,4.712389,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9671,11 +9671,21 @@ class Mission
 				items=2;
 				class Item0
 				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={72,5,16};
+					};
+					title="Soin Médical";
+					id=427;
+				};
+				class Item1
+				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={72,5.5366802,16};
-						angles[]={0,3.141593,-0};
+						position[]={72,6.3117032,16};
+						angles[]={0,3.1415927,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9684,8 +9694,8 @@ class Mission
 						init="call{this addAction [""<t color='#fb0000'>Recevoir un traitement d'un établissement médical</t>"", ""[player] call ace_medical_treatment_fnc_fullHealLocal; hint 'Vous avez été complètement guéri';"", [], 6, true, false, """", ""true"", 2, true, """", """"];}";
 						disableSimulation=1;
 					};
-					id=426;
-					type="Land_OPTRE_MedCab";
+					id=1020;
+					type="3AS_Terminal_Console_Med_Prop";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9729,16 +9739,6 @@ class Mission
 						};
 						nAttributes=3;
 					};
-				};
-				class Item1
-				{
-					dataType="Comment";
-					class PositionInfo
-					{
-						position[]={72,5,16};
-					};
-					title="Soin Médical";
-					id=427;
 				};
 			};
 			id=425;
@@ -9798,7 +9798,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={10.991333,7.4694877,48};
-								angles[]={0,1.5707965,-0};
+								angles[]={0,1.5707965,0};
 							};
 							side="Empty";
 							flags=1;
@@ -9833,7 +9833,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={21.008667,7.4694877,48};
-								angles[]={0,4.712389,-0};
+								angles[]={0,4.712389,0};
 							};
 							side="Empty";
 							flags=1;
@@ -9936,7 +9936,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={11,7.4694877,48};
-								angles[]={0,4.712389,-0};
+								angles[]={0,4.712389,0};
 							};
 							side="Empty";
 							flags=1;
@@ -9971,7 +9971,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={21,7.4694877,48};
-								angles[]={0,1.5707963,-0};
+								angles[]={0,1.5707963,0};
 							};
 							side="Empty";
 							flags=1;
@@ -10006,7 +10006,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={16,7.4694877,43};
-								angles[]={0,3.1415925,-0};
+								angles[]={0,3.1415925,0};
 							};
 							side="Empty";
 							flags=1;
