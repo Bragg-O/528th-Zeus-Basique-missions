@@ -4,8 +4,8 @@ class Header {
 	maxPlayers = 55;	// maximum number of players the mission supports
 };
 author			= "528th Legion Targon";
-onLoadName		= "Tout reste à créer (Venator)";
-onLoadMission	= "Tout reste à créer (Venator)";
+onLoadName		= "Tout reste à créer";
+onLoadMission	= "Tout reste à créer";
 loadScreen		= "\528th_Aux\Mission_Textures\LoadScreen.paa";
 respawn = 3;
 respawnTemplates[] = {};

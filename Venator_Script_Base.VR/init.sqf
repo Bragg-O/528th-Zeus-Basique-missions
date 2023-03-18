@@ -9,5 +9,3 @@
 [] execVM "528th_Aux\Mission_Script\init_GarageAir.sqf"; //garage Air Script Need "SpawnAir_Pad", "SpawnAir_terminal"
 
 [] execVM "528th_Aux\Mission_Script\init_GarageCar.sqf"; //garage Car Script Need "SpawnCar_Pad", "SpawnCar_terminal"
-
-[] execVM "Venator\Cam.sqf";
