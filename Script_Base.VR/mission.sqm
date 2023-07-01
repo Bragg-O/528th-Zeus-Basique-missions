@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1338;
+		nextID=1341;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1274;
+		nextID=1382;
 	};
 	class Camera
 	{
-		pos[]={85.884369,83.552933,100.89181};
-		dir[]={-0.14188443,-0.77172065,-0.62000299};
-		up[]={-0.17216656,0.63588828,-0.75232726};
-		aside[]={-0.97484154,-1.5989644e-007,0.22308691};
+		pos[]={3.3373976,24.303064,13.614869};
+		dir[]={0.57837844,-0.78948945,-0.20557231};
+		up[]={0.7439034,0.61375326,-0.26440498};
+		aside[]={-0.33491534,3.9115548e-007,-0.94228232};
 	};
 };
 binarizationWanted=0;
@@ -32,7 +32,7 @@ addons[]=
 {
 	"3as_GNK_Prop",
 	"A3_Misc_F_Helpers",
-	"ls_flags",
+	"RSPN_Assets",
 	"OPTRE_BW_DoorConsole",
 	"A3_Modules_F_Multiplayer",
 	"A3_Structures_F_Argo_Commercial_Billboards",
@@ -75,9 +75,8 @@ class AddonsMetaData
 		};
 		class Item2
 		{
-			className="ls_flags";
-			name="ls_flags";
-			author="Legion Studios";
+			className="RSPN_Assets";
+			name="RSPN_Assets";
 		};
 		class Item3
 		{
@@ -3016,7 +3015,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								name="Shield_2";
+								name="Shield_1";
 							};
 							id=1336;
 							type="UserTexture1m_F";
@@ -3071,7 +3070,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={84,5,0};
-								angles[]={0,5.4088302,-0};
+								angles[]={0,5.4088302,0};
 							};
 							title="Loadout shield";
 							id=1337;
@@ -3082,7 +3081,7 @@ class Mission
 				};
 			};
 			id=183;
-			atlOffset=0.03125;
+			atlOffset=0.75;
 		};
 		class Item1
 		{
