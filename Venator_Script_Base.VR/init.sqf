@@ -10,6 +10,8 @@
 
 [] execVM "528th_Aux\Mission_Script\init_GarageCar.sqf"; //garage Car Script Need "SpawnCar_Pad", "SpawnCar_terminal"
 
+[] execVM "528th_Aux\Mission_Script\init_fortifyACE.sqf"; //Add fortify in ace menu
+
 MAC_fnc_switchMove = {
    private["_object","_anim"];
    _object = _this select 0;

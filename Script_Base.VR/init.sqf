@@ -9,3 +9,13 @@
 [] execVM "528th_Aux\Mission_Script\init_GarageAir.sqf"; //garage Air Script Need "SpawnAir_Pad", "SpawnAir_terminal"
 
 [] execVM "528th_Aux\Mission_Script\init_GarageCar.sqf"; //garage Car Script Need "SpawnCar_Pad", "SpawnCar_terminal"
+
+[] execVM "528th_Aux\Mission_Script\init_fortifyACE.sqf"; //Add fortify in ace menu
+
+MAC_fnc_switchMove = {
+   private["_object","_anim"];
+   _object = _this select 0;
+   _anim = _this select 1;
+
+   _object switchMove _anim;
+};
