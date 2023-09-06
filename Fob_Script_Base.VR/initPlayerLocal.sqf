@@ -1,4 +1,3 @@
-removeAllWeapons player;
 sameAsDeath = true;  // false for loadout at start
 loadoutAtStart = getUnitLoadout player;
 
@@ -23,6 +22,3 @@ addMissionEventHandler ["EntityRespawned", {
     deleteVehicle _corpse;
   };
 }];
-private _video = ["528th_Aux\Mission_Textures\DebutMission.ogv"] spawn BIS_fnc_playVideo;
-sleep 23;
-forceRespawn player;

@@ -22,4 +22,3 @@ addMissionEventHandler ["EntityRespawned", {
     deleteVehicle _corpse;
   };
 }];
-private _video = ["528th_Aux\Mission_Textures\DebutMission.ogv"] spawn BIS_fnc_playVideo;
