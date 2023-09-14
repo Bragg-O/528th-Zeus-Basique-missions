@@ -8,6 +8,8 @@
 
 [] execVM "528th_Aux\Mission_Script\init_fortifyACE.sqf"; //Add fortify in ace menu
 
+[] execVM "528th_Aux\Mission_Script\init_MagRestriction.sqf"; //Mag Restriction
+
 //Cinematique
 ["528th_Aux\Mission_Textures\DebutMission.ogv"] call BIS_fnc_quotations;
 ["<t color='#ffffff' size='.5'>Bienvenue à bord de la 528th Légion Targon !<br />Vous avez déjà vu l'introduction ?<br />Appuyez sur la touche [Espace] pour la passer.</t>",-1,1,6,1,0,789] spawn BIS_fnc_dynamicText;
