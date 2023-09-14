@@ -4,8 +4,8 @@ class Header {
 	maxPlayers = 55;	// maximum number of players the mission supports
 };
 author			= "528th Legion Targon";
-onLoadName		= "Tout reste à créer";
-onLoadMission	= "Tout reste à créer";
+onLoadName		= "Venator [ATLAS]";
+onLoadMission	= "Bienvenue sur le Venator Atlas !!!!";
 loadScreen		= "\528th_Aux\Mission_Textures\LoadScreen.paa";
 respawn = 3;
 respawnTemplatesWest[] = { "MenuPosition", "Spectator" };
@@ -43,3 +43,10 @@ zeusCompositionScriptLevel = 2;	// 0: all scripts are forbidden
 								// 1: only attributes are allowed (including custom attributes added by mods)
 								// 2: all scripts are allowed including init scripts
 								// Default: 1
+								
+#include "\528th_Aux\Mission_Script\LARs\override_VA_templates\settings.hpp"
+
+class CfgFunctions
+{
+	#include "\528th_Aux\Mission_Script\LARs\override_VA_templates\functions\functions.hpp"
+};

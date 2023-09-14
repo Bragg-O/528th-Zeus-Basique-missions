@@ -1,8 +1,4 @@
-[] execVM "528th_Aux\Mission_Script\init_InfoPanel.sqf"; //InfoPanel Script Need "infopanel_1", "infopanel_2", "infopanel_3", "infopanel_4"
-
-[] execVM "528th_Aux\Mission_Script\init_Loadout.sqf"; //Loadout Script Need "Loadout_AT", "Loadout_EOD", "Loadout_Flame", "Loadout_GL", "Loadout_Infirmier", "Loadout_Ingenieur", "Loadout_JTAC", "Loadout_Medic", "Loadout_Mortier", "Loadout_Pilote", "Loadout_Shield", "Loadout_Soldat", "Loadout_TP", "Loadout_Z6"
-
-[] execVM "528th_Aux\Mission_Script\init_UnitTrait.sqf"; //UnitTrait Script Need "UnitTrait_Ingenieur", "UnitTrait_medic", "UnitTrait_EOD"
+[] execVM "528th_Aux\Mission_Script\init_Loadout.sqf"; //Loadout Script
 
 [] execVM "528th_Aux\Mission_Script\init_MapIcon.sqf"; //Player Map Icon Script
 
@@ -15,3 +11,12 @@
 //Cinematique
 ["528th_Aux\Mission_Textures\DebutMission.ogv"] call BIS_fnc_quotations;
 ["<t color='#ffffff' size='.5'>Bienvenue à bord de la 528th Légion Targon !<br />Vous avez déjà vu l'introduction ?<br />Appuyez sur la touche [Espace] pour la passer.</t>",-1,1,6,1,0,789] spawn BIS_fnc_dynamicText;
+
+while {true} do {
+	sleep 5;
+	//Carry and Drag
+		ACE_maxWeightCarry = 3500; 
+		ACE_maxWeightDrag = 5000;
+	//Add player to allcurators	
+		{ _x addCuratorEditableObjects [[player],true]; } forEach allCurators;
+};
