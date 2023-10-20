@@ -12,6 +12,8 @@
 
 [] execVM "528th_Aux\Mission_Script\init_MagRestriction.sqf"; //Mag Restriction
 
+[] execVM "528th_Aux\Mission_Script\init_ModsVerification.sqf"; //ModsVerification
+
 [] execVM "528th_Aux\Mission_Script\Addons.sqf"; //Addons
 
 //Cinematique
