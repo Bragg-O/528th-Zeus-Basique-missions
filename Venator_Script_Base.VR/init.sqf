@@ -1,30 +1,36 @@
-[] execVM "528th_Aux\Mission_Script\init_Loadout.sqf"; //Loadout Script
+/*
+    File: Mission/init.sqf
+    Author: Bragg for 528th Legion Targon
+    Public: No
 
-[] execVM "528th_Aux\Mission_Script\init_MapIcon.sqf"; //Player Map Icon Script
+    Description: Please do not {Copy, Modify, Plagiarize} the following content without prior authorization from its creator.
+    
+    Website: [www.528th.fr]
+*/
+/* ============================================================================ */
+/* vvv You can deactivate a function with "//" at the beginning of the line vvv */
+/* ============================================================================ */
 
-[] execVM "528th_Aux\Mission_Script\init_GarageAir.sqf"; //garage Air Script Need "SpawnAir_Pad", "SpawnAir_terminal"
+//Add fortify in ace menu
+	[] execVM "528th_Init\init_fortifyACE.sqf";
 
-[] execVM "528th_Aux\Mission_Script\init_GarageCar.sqf"; //garage Car Script Need "SpawnCar_Pad", "SpawnCar_terminal"
+//Player Map Icon Script
+	[] execVM "528th_Init\init_MapIcon.sqf";
 
-[] execVM "528th_Aux\Mission_Script\init_GarageBox.sqf"; //garage Car Script Need "SpawnCar_Pad", "SpawnCar_terminal"
 
-[] execVM "528th_Aux\Mission_Script\init_fortifyACE.sqf"; //Add fortify in ace menu
+/* ============================================================================ */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv Do not touch vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* ============================================================================ */
 
-[] execVM "528th_Aux\Mission_Script\init_MagRestriction.sqf"; //Mag Restriction
+//init ALL 528th Forced Script
+	[] execVM "528th_Init\init_528th.sqf";
 
-[] execVM "528th_Aux\Mission_Script\init_ModsVerification.sqf"; //ModsVerification
-
-[] execVM "528th_Aux\Mission_Script\Addons.sqf"; //Addons
-
-//Cinematique
-["528th_Aux\Mission_Textures\DebutMission.ogv"] call BIS_fnc_quotations;
-["<t color='#ffffff' size='.5'>Bienvenue à bord de la 528th Légion Targon !<br />Vous avez déjà vu l'introduction ?<br />Appuyez sur la touche [Espace] pour la passer.</t>",-1,1,6,1,0,789] spawn BIS_fnc_dynamicText;
+_olddir = 0; 
+_newdir = 0;
 
 while {true} do {
-	sleep 10;
-	//Carry and Drag
-		ACE_maxWeightCarry = 3500; 
-		ACE_maxWeightDrag = 5000;
-	//Add allplayers to allcurators
-	{_x addCuratorEditableObjects [allPlayers, true];_x addCuratorEditableObjects [vehicles, true];} forEach allCurators;
+    sleep 0.01;
+    _olddir = _newdir;
+    _newdir = _olddir + 1;
+    MiniAtlas setDir _newdir;
 };

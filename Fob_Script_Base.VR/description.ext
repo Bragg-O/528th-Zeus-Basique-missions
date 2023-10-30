@@ -1,20 +1,38 @@
+/*
+    File: Mission/description.ext
+    Author: Bragg for 528th Legion Targon
+    Public: No
+
+    Description: Please do not {Copy, Modify, Plagiarize} the following content without prior authorization from its creator.
+    
+    Website: [www.528th.fr]
+*/
+
+/* ============================================================================ */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvv You can edit here vvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* ============================================================================ */
+author			= "528th Legion Targon"; //Mission Author 
+onLoadName		= "FOB [NEXUS]"; //Mission Name 
+onLoadMission	= "Bienvenue sur FOB Nexus!!!!"; //Mission Short Description
+
+
+/* ============================================================================ */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv Do not touch vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* ============================================================================ */
+loadScreen = "528th_Textures\LoadScreen.paa"; //LoadScreen
 class Header {
 	gameType =  Zeus;	// Game type
 	minPlayers =  1;	// minimum number of players the mission supports
 	maxPlayers = 55;	// maximum number of players the mission supports
 };
-author			= "528th Legion Targon";
-onLoadName		= "FOB [NEXUS]";
-onLoadMission	= "Bienvenue sur FOB Nexus !!!!";
-loadScreen		= "\528th_Aux\Mission_Textures\LoadScreen.paa";
-respawn = 3;
+respawn = 3; //Respawn type
 respawnTemplatesWest[] = { "MenuPosition", "Spectator" };
 respawnTemplatesEast[] = { "MenuPosition", "Spectator" };
 respawnTemplatesGuer[] = { "MenuPosition", "Spectator" };
 respawnTemplatesCiv[] = { "MenuPosition", "Spectator" };
 respawnTemplatesVirtual[] = {}; // Virtual players, used mainly in Curator (Zeus) missions
-respawnDelay = 5;
-respawnOnStart = 1;
+respawnDelay = 5; //Respawn Delay (s)
+respawnOnStart = 1; //Respawn on start
 enableDebugConsole[] = { "76561198113173701", "76561198169985342"}; // admins and players with their UID in this list have access
 enableItemsDropping = 1; // 0: disabled - 1: enabled. Default: ?
 enableTeamSwitch = 0; // 0: disabled - 1: enabled. Default: 1
@@ -28,7 +46,7 @@ showGroupIndicator = 0; // 0: disabled - 1: enabled. Default: 0
 showMap = 1; // 0: disabled - 1: enabled. Default: 1
 showSquadRadar = 0; // 0: disabled - 1: enabled. Default: 0
 showUAVFeed = 1; // 0: disabled - 1: enabled. Default: 1
-allowProfileGlasses = 0;
+allowProfileGlasses = 0; // 0: disabled - 1: enabled. Default: 1 
 corpseLimit = 15; // Default: 15
 corpseRemovalMinTime = 60; // seconds. Default: 10
 corpseRemovalMaxTime = 120; // seconds. Default: 3600
@@ -43,10 +61,9 @@ zeusCompositionScriptLevel = 2;	// 0: all scripts are forbidden
 								// 1: only attributes are allowed (including custom attributes added by mods)
 								// 2: all scripts are allowed including init scripts
 								// Default: 1
-								
-#include "\528th_Aux\Mission_Script\LARs\override_VA_templates\settings.hpp"
 
-class CfgFunctions
-{
-	#include "\528th_Aux\Mission_Script\LARs\override_VA_templates\functions\functions.hpp"
+//Arsenal override
+#include "\528th_Init\LARs\override_VA_templates\settings.hpp"
+class CfgFunctions {
+	#include "\528th_Init\LARs\override_VA_templates\functions\functions.hpp"
 };
