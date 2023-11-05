@@ -10664,7 +10664,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[[[[""FirstAidKit""],[4]],[[""SWLW_beltGrenade_mag"",""SmokeShellBlue"",""SmokeShellRed"",""SmokeShell"",""ACE_M14"",""Chemlight_blue"",""Chemlight_red"",""DemoCharge_Remote_Mag""],[30,30,30,30,30,30,30,6]],[[],[]],[[],[]]],false]";
+											value="[[[[""FirstAidKit""],[4]],[[""SWLW_beltGrenade_mag"",""SmokeShellBlue"",""SmokeShellRed"",""SmokeShell"",""ace_M14"",""Chemlight_blue"",""Chemlight_red"",""DemoCharge_Remote_Mag""],[30,30,30,30,30,30,30,6]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -10698,7 +10698,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[[[[""FirstAidKit""],[4]],[[""SWLW_beltGrenade_mag"",""SmokeShellBlue"",""SmokeShellRed"",""SmokeShell"",""ACE_M14"",""Chemlight_blue"",""Chemlight_red"",""DemoCharge_Remote_Mag""],[30,30,30,30,30,30,30,6]],[[],[]],[[],[]]],false]";
+											value="[[[[""FirstAidKit""],[4]],[[""SWLW_beltGrenade_mag"",""SmokeShellBlue"",""SmokeShellRed"",""SmokeShell"",""ace_M14"",""Chemlight_blue"",""Chemlight_red"",""DemoCharge_Remote_Mag""],[30,30,30,30,30,30,30,6]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
