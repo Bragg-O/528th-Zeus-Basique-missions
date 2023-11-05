@@ -5,29 +5,30 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=42;
+	toggles=46;
 	mods[]=
 	{
 		"3denEnhanced",
 		"meh_common",
 		"meh_error",
 		"meh_main",
+		"meh_effects",
 		"meh_modules"
 	};
 	class ItemIDProvider
 	{
-		nextID=24782;
+		nextID=24785;
 	};
 	class LayerIndexProvider
 	{
-		nextID=4917;
+		nextID=5071;
 	};
 	class Camera
 	{
-		pos[]={368.45389,973.62964,468.6358};
-		dir[]={-0.45348871,-0.49348897,0.74230641};
-		up[]={-0.25727084,0.86973542,0.42112154};
-		aside[]={0.85343403,-4.2386819e-007,0.52137977};
+		pos[]={375.69824,977.83331,466.53256};
+		dir[]={-0.89419371,-0.44687888,0.030971276};
+		up[]={-0.44669473,0.89452827,0.015474128};
+		aside[]={0.034627054,1.19998e-006,0.99952793};
 	};
 };
 binarizationWanted=0;
@@ -836,7 +837,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="2";
+											value="3";
 										};
 									};
 								};
@@ -27267,7 +27268,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10439;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27302,7 +27303,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10440;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27337,7 +27338,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10441;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27372,7 +27373,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10442;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27407,7 +27408,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10443;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27442,7 +27443,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10444;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27477,7 +27478,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10445;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -27512,7 +27513,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10447;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -27560,7 +27561,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10448;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -27608,7 +27609,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10449;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -27656,7 +27657,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10450;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -27704,7 +27705,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10452;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -27752,7 +27753,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10453;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -27800,7 +27801,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10454;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -27848,7 +27849,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10438;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=11.031921;
 									class CustomAttributes
 									{
@@ -27883,7 +27884,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10446;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=11.031494;
 									class CustomAttributes
 									{
@@ -27918,7 +27919,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10451;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=7.7365723;
 									class CustomAttributes
 									{
@@ -27966,7 +27967,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10455;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.4649658;
 									class CustomAttributes
 									{
@@ -29832,7 +29833,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10380;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -29867,7 +29868,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10382;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -29902,7 +29903,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10383;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -29937,7 +29938,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10384;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -29972,7 +29973,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10385;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -30007,7 +30008,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10386;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -30042,7 +30043,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10387;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -30077,7 +30078,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10389;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -30125,7 +30126,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10390;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -30173,7 +30174,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10391;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -30221,7 +30222,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10392;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=5.6416626;
 									class CustomAttributes
 									{
@@ -30269,7 +30270,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10394;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -30317,7 +30318,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10395;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -30365,7 +30366,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10396;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -30411,7 +30412,7 @@ class Mission
 									{
 									};
 									id=10381;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=964.01361;
 								};
 								class Item15
@@ -30427,7 +30428,7 @@ class Mission
 									{
 									};
 									id=10388;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=11.031067;
 								};
 								class Item16
@@ -30445,7 +30446,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10393;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=7.7365723;
 									class CustomAttributes
 									{
@@ -30493,7 +30494,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10397;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.4649658;
 									class CustomAttributes
 									{
@@ -37117,7 +37118,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10676;
-									type="3AS_Venator_Hangar_Bay_Corridor_Prop";
+									type="3as_Venator_Hangar_Bay_Corridor_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -37164,7 +37165,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10677;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=10.990662;
 									class CustomAttributes
 									{
@@ -37211,7 +37212,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10678;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=10.990662;
 									class CustomAttributes
 									{
@@ -37406,7 +37407,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10694;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -37454,7 +37455,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10695;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -37502,7 +37503,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10698;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -37550,7 +37551,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10699;
-									type="3AS_Venator_Hangar_Bay_Prop";
+									type="3as_Venator_Hangar_Bay_Prop";
 									atlOffset=3.1481934;
 									class CustomAttributes
 									{
@@ -37597,7 +37598,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10696;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.3034668;
 									class CustomAttributes
 									{
@@ -37644,7 +37645,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10697;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.3034668;
 									class CustomAttributes
 									{
@@ -37691,7 +37692,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10700;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.3034668;
 									class CustomAttributes
 									{
@@ -37738,7 +37739,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10701;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=5.3034668;
 									class CustomAttributes
 									{
@@ -37830,7 +37831,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10691;
-									type="3AS_Venator_Hangar_Bay_Corridor_Prop";
+									type="3as_Venator_Hangar_Bay_Corridor_Prop";
 									atlOffset=9.3818359;
 									class CustomAttributes
 									{
@@ -37877,7 +37878,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10685;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=10.990662;
 									class CustomAttributes
 									{
@@ -37924,7 +37925,7 @@ class Mission
 										disableSimulation=1;
 									};
 									id=10686;
-									type="3AS_Venator_Side_Wall_Prop";
+									type="3as_Venator_Side_Wall_Prop";
 									atlOffset=10.990662;
 									class CustomAttributes
 									{
@@ -43442,7 +43443,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="this addAction[""Refuel"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Refueling"", 5, {!isEngineOn veh;}, {hint ""refueling complete"";veh setFuel 1;}, {hint ""refueling aborted"";}] call cba_fnc_progressBar;},nil,1.5,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Repair"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Repairing"", 5, {!isEngineOn veh;}, {hint ""repairing complete"";veh setDamage 0;}, {hint ""repairing aborted"";}] call cba_fnc_progressBar;},nil,1.4,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Rearm"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Rearming"", 5, {!isEngineOn veh;}, {hint ""rearming complete"";[objNull, veh] call ace_rearm_fnc_rearmEntireVehicleSuccess;}, {hint ""rearming aborted"";}] call cba_fnc_progressBar;},nil,1.3,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Change Pylons"",{_veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [_veh] call ace_pylons_fnc_showDialog},nil,1.2,true,true,"""",""true"",15,false,"""",""""];";
+										init="this addAction[""Refuel"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Refueling"", 5, {!isEngineOn veh;}, {hint ""refueling complete"";veh setFuel 1;}, {hint ""refueling aborted"";}] call CBA_fnc_progressBar;},nil,1.5,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Repair"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Repairing"", 5, {!isEngineOn veh;}, {hint ""repairing complete"";veh setDamage 0;}, {hint ""repairing aborted"";}] call CBA_fnc_progressBar;},nil,1.4,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Rearm"",{veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [""Rearming"", 5, {!isEngineOn veh;}, {hint ""rearming complete"";[objNull, veh] call ace_rearm_fnc_rearmEntireVehicleSuccess;}, {hint ""rearming aborted"";}] call CBA_fnc_progressBar;},nil,1.3,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Change Pylons"",{_veh = nearestObjects [pad1_repair, [""Helicopter"",""Plane""], 10] select 0; [_veh] call ace_pylons_fnc_showDialog},nil,1.2,true,true,"""",""true"",15,false,"""",""""];";
 										name="panel1";
 										disableSimulation=1;
 									};
@@ -43492,7 +43493,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
-										init="this addAction[""Refuel"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Refueling"", 5, {!isEngineOn veh;}, {hint ""refueling complete"";veh setFuel 1;}, {hint ""refueling aborted"";}] call cba_fnc_progressBar;},nil,1.5,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Repair"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Repairing"", 5, {!isEngineOn veh;}, {hint ""repairing complete"";veh setDamage 0;}, {hint ""repairing aborted"";}] call cba_fnc_progressBar;},nil,1.4,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Rearm"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Rearming"", 5, {!isEngineOn veh;}, {hint ""rearming complete"";[objNull, veh] call ace_rearm_fnc_rearmEntireVehicleSuccess;}, {hint ""rearming aborted"";}] call cba_fnc_progressBar;},nil,1.3,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Change Pylons"",{_veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [_veh] call ace_pylons_fnc_showDialog},nil,1.2,true,true,"""",""true"",15,false,"""",""""];";
+										init="this addAction[""Refuel"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Refueling"", 5, {!isEngineOn veh;}, {hint ""refueling complete"";veh setFuel 1;}, {hint ""refueling aborted"";}] call CBA_fnc_progressBar;},nil,1.5,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Repair"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Repairing"", 5, {!isEngineOn veh;}, {hint ""repairing complete"";veh setDamage 0;}, {hint ""repairing aborted"";}] call CBA_fnc_progressBar;},nil,1.4,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Rearm"",{veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [""Rearming"", 5, {!isEngineOn veh;}, {hint ""rearming complete"";[objNull, veh] call ace_rearm_fnc_rearmEntireVehicleSuccess;}, {hint ""rearming aborted"";}] call CBA_fnc_progressBar;},nil,1.3,true,true,"""",""true"",15,false,"""",""""];  " \n "this addAction[""Change Pylons"",{_veh = nearestObjects [pad2_repair, [""Helicopter"",""Plane""], 10] select 0; [_veh] call ace_pylons_fnc_showDialog},nil,1.2,true,true,"""",""true"",15,false,"""",""""];";
 										name="panel2";
 										disableSimulation=1;
 									};
@@ -43854,7 +43855,7 @@ class Mission
 					name="Interior";
 					class Entities
 					{
-						items=10;
+						items=11;
 						class Item0
 						{
 							dataType="Layer";
@@ -59675,7 +59676,7 @@ class Mission
 							name="Arsenal";
 							class Entities
 							{
-								items=137;
+								items=134;
 								class Item0
 								{
 									dataType="Object";
@@ -61773,54 +61774,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={367.31445,957.98901,399.94629};
-										angles[]={0,3.141593,0};
-									};
-									side="Empty";
-									class Attributes
-									{
-									};
-									id=24552;
-									type="442_wall";
-									atlOffset=952.98901;
-								};
-								class Item132
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={364.31445,957.98901,399.94629};
-										angles[]={0,3.141593,0};
-									};
-									side="Empty";
-									class Attributes
-									{
-									};
-									id=24553;
-									type="442_wall";
-									atlOffset=952.98901;
-								};
-								class Item133
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={365.81445,957.98901,399.94629};
-										angles[]={0,3.141593,0};
-									};
-									side="Empty";
-									class Attributes
-									{
-									};
-									id=24554;
-									type="442_wall_light";
-									atlOffset=952.98901;
-								};
-								class Item134
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={364.31445,957.98901,414.94629};
 										angles[]={0,1.0331603e-007,0};
 									};
@@ -61832,7 +61785,7 @@ class Mission
 									type="442_wall";
 									atlOffset=952.98901;
 								};
-								class Item135
+								class Item132
 								{
 									dataType="Object";
 									class PositionInfo
@@ -61848,7 +61801,7 @@ class Mission
 									type="442_wall";
 									atlOffset=952.98901;
 								};
-								class Item136
+								class Item133
 								{
 									dataType="Object";
 									class PositionInfo
@@ -61865,11 +61818,26 @@ class Mission
 								};
 							};
 							id=24555;
-							atlOffset=952.98901;
+							atlOffset=952.92651;
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={365.814,957.86401,399.69601};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=24784;
+							type="442_door_lock";
+							atlOffset=952.86401;
 						};
 					};
 					id=14797;
-					atlOffset=0.86468506;
+					atlOffset=953.35815;
 				};
 				class Item21
 				{
@@ -65795,7 +65763,6 @@ class Mission
 							{
 							};
 							id=24607;
-							atlOffset=-5;
 						};
 						class Item6
 						{
@@ -66109,11 +66076,9 @@ class Mission
 							{
 							};
 							id=24659;
-							atlOffset=-5;
 						};
 					};
 					id=24597;
-					atlOffset=241.41173;
 				};
 				class Item23
 				{
@@ -67285,7 +67250,7 @@ class Mission
 				};
 			};
 			id=24412;
-			atlOffset=944.43567;
+			atlOffset=2.965271;
 		};
 		class Item1
 		{
