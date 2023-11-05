@@ -3,7 +3,7 @@
     Author: Bragg for 528th Legion Targon
     Public: No
 
-    Description: Please do not {Copy, Modify, Plagiarize} the following content without prior authorization from its creator.
+    Description: Please do not [Copy, Modify, Plagiarize] the following content without prior authorization from its creator.
     
     Website: [www.528th.fr]
 */
