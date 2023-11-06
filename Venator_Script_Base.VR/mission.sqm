@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=46;
+	toggles=42;
 	mods[]=
 	{
 		"3denEnhanced",
@@ -17,18 +17,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=24785;
+		nextID=24809;
 	};
 	class LayerIndexProvider
 	{
-		nextID=5071;
+		nextID=5150;
 	};
 	class Camera
 	{
-		pos[]={375.69824,977.83331,466.53256};
-		dir[]={-0.89419371,-0.44687888,0.030971276};
-		up[]={-0.44669473,0.89452827,0.015474128};
-		aside[]={0.034627054,1.19998e-006,0.99952793};
+		pos[]={367.62253,968.72754,404.45331};
+		dir[]={0.25907117,-0.73270464,0.62947863};
+		up[]={0.27892926,0.68033659,0.67773801};
+		aside[]={0.92483312,-1.679291e-008,-0.38062552};
 	};
 };
 binarizationWanted=0;
@@ -104,7 +104,7 @@ addons[]=
 	"528th_Objects_Box",
 	"Desert",
 	"442_misc_porg",
-	"528th_Objects_Gonk",
+	"528th_Objects_LoadBox",
 	"A3_Characters_F_Common"
 };
 class AddonsMetaData
@@ -509,8 +509,8 @@ class AddonsMetaData
 		};
 		class Item65
 		{
-			className="528th_Objects_Gonk";
-			name="528th Objects (Gonk)";
+			className="528th_Objects_LoadBox";
+			name="528th Objects (LoadBox)";
 			author="528th";
 			url="http://www.528th.fr";
 		};
@@ -61818,7 +61818,7 @@ class Mission
 								};
 							};
 							id=24555;
-							atlOffset=952.92651;
+							atlOffset=952.98901;
 						};
 						class Item10
 						{
@@ -61837,7 +61837,7 @@ class Mission
 						};
 					};
 					id=14797;
-					atlOffset=953.35815;
+					atlOffset=953.37378;
 				};
 				class Item21
 				{
@@ -65763,6 +65763,7 @@ class Mission
 							{
 							};
 							id=24607;
+							atlOffset=-5;
 						};
 						class Item6
 						{
@@ -66076,9 +66077,11 @@ class Mission
 							{
 							};
 							id=24659;
+							atlOffset=-5;
 						};
 					};
 					id=24597;
+					atlOffset=241.41173;
 				};
 				class Item23
 				{
@@ -66786,358 +66789,6 @@ class Mission
 				class Item26
 				{
 					dataType="Layer";
-					name="Loadout";
-					class Entities
-					{
-						items=19;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={377.3299,958.75702,406.73257};
-								angles[]={0,1.2217308,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24755;
-							type="528th_GNK_AA";
-							atlOffset=952.99689;
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={379.42615,958.75702,400.77554};
-								angles[]={0,3.0543261,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24756;
-							type="528th_GNK_Demolisseur";
-							atlOffset=952.99689;
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={354.61755,958.75702,400.88467};
-								angles[]={0,2.9670599,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24757;
-							type="528th_GNK_ExpertEnCommunication";
-							atlOffset=952.99689;
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={354.20035,958.75702,407.41052};
-								angles[]={0,4.6251225,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24758;
-							type="528th_GNK_Fantassin";
-							atlOffset=952.99689;
-						};
-						class Item4
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={360.79688,958.75702,400.79306};
-								angles[]={0,3.0543261,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24759;
-							type="528th_GNK_Grenadier";
-							atlOffset=952.99689;
-						};
-						class Item5
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={375.00757,958.75702,414.14365};
-								angles[]={0,0.26179993,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24760;
-							type="528th_GNK_Heavy";
-							atlOffset=952.99689;
-						};
-						class Item6
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={376.5657,958.75702,414.11679};
-								angles[]={0,6.1086535,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24761;
-							type="528th_GNK_HeavyShield";
-							atlOffset=952.99689;
-						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={382.14627,958.75702,400.91501};
-								angles[]={0,2.3561945,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24762;
-							type="528th_GNK_IngenieurDeCombat";
-							atlOffset=952.99689;
-						};
-						class Item8
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={349.38196,958.75702,403.60971};
-								angles[]={0,4.7996559,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24763;
-							type="528th_GNK_Krayt";
-							atlOffset=952.99689;
-						};
-						class Item9
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={354.93546,958.75702,414.20694};
-								angles[]={0,0.087268002,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24764;
-							type="528th_GNK_Medecin";
-							atlOffset=952.99689;
-						};
-						class Item10
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={349.62317,958.75702,401.17349};
-								angles[]={0,3.926991,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24765;
-							type="528th_GNK_Mykal";
-							atlOffset=952.99689;
-						};
-						class Item11
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={356.97018,958.75702,414.15109};
-								angles[]={0,6.1086531,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24766;
-							type="528th_GNK_Nysillin";
-							atlOffset=952.99689;
-						};
-						class Item12
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={356.75189,958.75702,400.83963};
-								angles[]={0,3.4033923,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24767;
-							type="528th_GNK_OperateurRadio";
-							atlOffset=952.99689;
-						};
-						class Item13
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={376.85013,958.75702,400.78726};
-								angles[]={0,2.9670599,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24768;
-							type="528th_GNK_Pilote";
-							atlOffset=952.99689;
-						};
-						class Item14
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={382.32336,958.75702,403.36932};
-								angles[]={0,1.4835302,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24769;
-							type="528th_GNK_Sapeur";
-							atlOffset=952.99689;
-						};
-						class Item15
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={370.84125,958.75702,400.86624};
-								angles[]={0,3.054327,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24770;
-							type="528th_GNK_Shield";
-							atlOffset=952.99689;
-						};
-						class Item16
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={351.90958,958.75702,400.81564};
-								angles[]={0,3.0543261,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24771;
-							type="528th_GNK_Vornskr";
-							atlOffset=952.99689;
-						};
-						class Item17
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={374.85596,958.75702,400.81763};
-								angles[]={0,3.4033923,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24772;
-							type="528th_GNK_Zerek";
-							atlOffset=952.99689;
-						};
-						class Item18
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={377.39279,958.75702,408.20963};
-								angles[]={0,1.9198623,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=24773;
-							type="528th_GNK_AT";
-							atlOffset=952.99689;
-						};
-					};
-					id=24754;
-					atlOffset=952.99689;
-				};
-				class Item27
-				{
-					dataType="Layer";
 					name="UnitTrait";
 					class Entities
 					{
@@ -67248,9 +66899,375 @@ class Mission
 					id=24774;
 					atlOffset=955.59546;
 				};
+				class Item27
+				{
+					dataType="Layer";
+					name="Loadout";
+					class Entities
+					{
+						items=21;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={377.31512,959,408.91379};
+								angles[]={0,2.9670599,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24787;
+							type="528th_LoadBox_AA";
+							atlOffset=0.98114014;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={377.27121,959,406.09857};
+								angles[]={0,3.3161256,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24788;
+							type="528th_LoadBox_AT";
+							atlOffset=0.98114014;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={379.65048,959,400.56247};
+								angles[]={0,4.712389,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24789;
+							type="528th_LoadBox_Demolisseur";
+							atlOffset=0.98114014;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={371.68237,959,400.75806};
+								angles[]={0,4.7123899,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24790;
+							type="528th_LoadBox_ExpertEnCommunication";
+							atlOffset=0.98114014;
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={354.17197,959,407.44867};
+								angles[]={0,3.1415927,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24791;
+							type="528th_LoadBox_Fantassin";
+							atlOffset=0.98114014;
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={375.76031,959,400.73297};
+								angles[]={0,4.6251225,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24792;
+							type="528th_LoadBox_Grenadier";
+							atlOffset=0.98114014;
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={354.62054,959,414.19446};
+								angles[]={0,1.4835308,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24793;
+							type="528th_LoadBox_HeavyShield";
+							atlOffset=0.98114014;
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={356.97418,959,414.20505};
+								angles[]={0,1.6580632,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24794;
+							type="528th_LoadBox_Heavy";
+							atlOffset=0.98114014;
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={381.86139,959,401.34729};
+								angles[]={0,3.926991,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24795;
+							type="528th_LoadBox_IngenieurDeCombat";
+							atlOffset=0.98114014;
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={351.95645,959,400.75314};
+								angles[]={0,1.5707967,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24796;
+							type="528th_LoadBox_Krayt";
+							atlOffset=0.98114014;
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={377.0542,959,414.09323};
+								angles[]={0,4.9741888,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24797;
+							type="528th_LoadBox_Medecin";
+							atlOffset=0.98114014;
+						};
+						class Item11
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={349.81644,959,401.56131};
+								angles[]={0,5.4977875,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24798;
+							type="528th_LoadBox_Mykal";
+							atlOffset=0.98114014;
+						};
+						class Item12
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={374.56012,959,414.19214};
+								angles[]={0,4.625123,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24799;
+							type="528th_LoadBox_Nysillin";
+							atlOffset=0.98114014;
+						};
+						class Item13
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={369.55362,959,400.81995};
+								angles[]={0,4.6251225,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24800;
+							type="528th_LoadBox_OperateurRadio";
+							atlOffset=0.98114014;
+						};
+						class Item14
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={359.63785,959,400.69162};
+								angles[]={0,4.7123895,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24801;
+							type="528th_LoadBox_Pilote";
+							atlOffset=0.98114014;
+						};
+						class Item15
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={382.49585,959,403.6058};
+								angles[]={0,3.1415927,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24802;
+							type="528th_LoadBox_Sapeur";
+							atlOffset=0.98114014;
+						};
+						class Item16
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={355.64273,959,400.64752};
+								angles[]={0,4.712389,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24803;
+							type="528th_LoadBox_Shield";
+							atlOffset=0.98114014;
+						};
+						class Item17
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={348.8772,959,403.61771};
+								angles[]={0,3.141593,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24804;
+							type="528th_LoadBox_Vornskr";
+							atlOffset=0.98114014;
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={361.85669,959,400.66489};
+								angles[]={0,1.3962643,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=24805;
+							type="528th_LoadBox_Zerek";
+							atlOffset=0.98114014;
+						};
+						class Item19
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={370.74561,958.01959,414.56726};
+								angles[]={0,1.5707963,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=24807;
+							type="528th_SupplyBox_Empty";
+						};
+						class Item20
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={360.81696,958.01959,414.56726};
+								angles[]={0,1.5707963,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=24808;
+							type="528th_SupplyBox_Empty";
+						};
+					};
+					id=24786;
+					atlOffset=0.24530029;
+				};
 			};
 			id=24412;
-			atlOffset=2.965271;
+			atlOffset=829.0993;
 		};
 		class Item1
 		{
