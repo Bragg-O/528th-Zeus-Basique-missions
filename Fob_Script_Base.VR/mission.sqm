@@ -5,19 +5,22 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=46;
+	toggles=42;
 	mods[]=
 	{
+		"WBK_Zombies_AdvancedEditorSettings",
 		"3denEnhanced",
 		"meh_common",
 		"meh_error",
 		"meh_main",
+		"meh_mpsync",
 		"meh_effects",
-		"meh_modules"
+		"meh_modules",
+		"meh_communicationjammer"
 	};
 	class ItemIDProvider
 	{
-		nextID=7309;
+		nextID=7403;
 	};
 	class MarkerIDProvider
 	{
@@ -25,21 +28,21 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1135;
+		nextID=1193;
 	};
 	class Camera
 	{
-		pos[]={436.33026,42.154118,372.60825};
-		dir[]={-0.64825243,-0.58883905,-0.48298261};
-		up[]={-0.47228986,0.80807191,-0.35188541};
-		aside[]={-0.59751779,-4.0740706e-006,0.80195999};
+		pos[]={410.74014,14.812046,348.96869};
+		dir[]={-0.71834707,-0.21104191,-0.66308403};
+		up[]={-0.15531845,0.97717369,-0.14337343};
+		aside[]={-0.6783163,4.0371742e-006,0.7348417};
 	};
 };
 binarizationWanted=0;
 sourceName="Fob_Script_Base";
 addons[]=
 {
-	"Desert",
+	"ls_flags",
 	"442_structures_hallway",
 	"CUP_Editor_Structures_Config",
 	"3AS_Structures_FOB",
@@ -61,13 +64,12 @@ addons[]=
 	"3AS_Prop_Platforms",
 	"ls_platforms",
 	"3AS_Prop_Interiors",
-	"528th_Objects_Flags",
+	"528th_Object_Flags",
 	"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
 	"JLTS_core",
 	"A3_Ui_F",
 	"A3_Rocks_F_Sharp",
 	"A3_Modules_F_Curator_Curator",
-	"528th_Regs",
 	"JMSLLTE_Faction_name",
 	"A3_Weapons_F",
 	"JLTS_weapons_Core",
@@ -76,12 +78,13 @@ addons[]=
 	"ace_medical_engine",
 	"ace_medical_treatment",
 	"JMSLLTE_empire_armor_mod",
-	"528th_Objects_Terminal",
+	"528th_Uniform_Regs",
+	"528th_Object_Terminal",
 	"A3_Structures_F_Mil_Helipads",
-	"528th_Objects_LoadBox",
-	"528th_Objects_Supply",
-	"528th_Objects_Box",
-	"442_misc_porg"
+	"528th_Object_Box",
+	"442_misc_tseries",
+	"528th_Object_LoadBox",
+	"528th_Object_Supply"
 };
 class AddonsMetaData
 {
@@ -90,8 +93,9 @@ class AddonsMetaData
 		items=41;
 		class Item0
 		{
-			className="Desert";
-			name="Desert";
+			className="ls_flags";
+			name="ls_flags";
+			author="Legion Studios";
 		};
 		class Item1
 		{
@@ -209,8 +213,8 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="528th_Objects_Flags";
-			name="528th Objects (Flags)";
+			className="528th_Object_Flags";
+			name="528th Object (Flags)";
 			author="528th";
 			url="http://www.528th.fr";
 		};
@@ -250,60 +254,60 @@ class AddonsMetaData
 		};
 		class Item27
 		{
-			className="528th_Regs";
-			name="528th Regs";
-			author="528th";
-			url="http://www.528th.fr";
-		};
-		class Item28
-		{
 			className="JMSLLTE_Faction_name";
 			name="JMSLLTE_Faction_name";
 			author="JMax";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="JLTS_weapons_Core";
 			name="JLTS The Great War - Weapons Core";
 			author="MrClock";
 		};
-		class Item31
+		class Item30
 		{
 			className="JMSLLTE_empire_mod";
 			name="JMSLLTE_empire_mod";
 			author="JMax";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item33
+		class Item32
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item34
+		class Item33
 		{
 			className="JMSLLTE_empire_armor_mod";
 			name="JMSLLTE_empire_armor_mod";
 			author="JMax";
 		};
+		class Item34
+		{
+			className="528th_Uniform_Regs";
+			name="528th Uniform Regs";
+			author="528th";
+			url="http://www.528th.fr";
+		};
 		class Item35
 		{
-			className="528th_Objects_Terminal";
-			name="528th Objects (Terminal)";
+			className="528th_Object_Terminal";
+			name="528th Object (Terminal)";
 			author="528th";
 			url="http://www.528th.fr";
 		};
@@ -316,30 +320,30 @@ class AddonsMetaData
 		};
 		class Item37
 		{
-			className="528th_Objects_LoadBox";
-			name="528th Objects (LoadBox)";
+			className="528th_Object_Box";
+			name="528th Object (Box)";
 			author="528th";
 			url="http://www.528th.fr";
 		};
 		class Item38
 		{
-			className="528th_Objects_Supply";
-			name="528th Objects (Supply)";
-			author="528th";
-			url="http://www.528th.fr";
+			className="442_misc_tseries";
+			name="442_misc_tseries";
+			author="KOBRA Mod Team";
 		};
 		class Item39
 		{
-			className="528th_Objects_Box";
-			name="528th Objects (Box)";
+			className="528th_Object_LoadBox";
+			name="528th Object (LoadBox)";
 			author="528th";
 			url="http://www.528th.fr";
 		};
 		class Item40
 		{
-			className="442_misc_porg";
-			name="442_misc_porg";
-			author="KOBRA Mod Team";
+			className="528th_Object_Supply";
+			name="528th Object (Supply)";
+			author="528th";
+			url="http://www.528th.fr";
 		};
 	};
 };
@@ -416,20 +420,20 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
-			property="CYT_dynmaicViewDistance";
-			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
+			property="meh_common_MissionVersion";
+			expression="true";
 			class Value
 			{
 				class data
 				{
-					singleType="BOOL";
-					value=1;
+					singleType="STRING";
+					value="v0.7.0";
 				};
 			};
 		};
 		class Attribute2
 		{
-			property="CYT_Light_SFX";
+			property="CYT_dynmaicViewDistance";
 			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
@@ -442,7 +446,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="CYT_Lock_Time";
+			property="CYT_Light_SFX";
 			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
@@ -455,7 +459,7 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="CYT_SFX_AmbientDust";
+			property="CYT_Lock_Time";
 			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
@@ -468,7 +472,7 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="CYT_SFX_Earthquake";
+			property="CYT_SFX_AmbientDust";
 			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
@@ -481,8 +485,8 @@ class CustomAttributes
 		};
 		class Attribute6
 		{
-			property="CYT_LimitViewDistance";
-			expression="if (is3den && !isNull findDisplay 313) then {[ 'Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
+			property="CYT_SFX_Earthquake";
+			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
 				class data
@@ -494,7 +498,7 @@ class CustomAttributes
 		};
 		class Attribute7
 		{
-			property="CYT_Outside_Info";
+			property="CYT_LimitViewDistance";
 			expression="if (is3den && !isNull findDisplay 313) then {[ 'Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
 			class Value
 			{
@@ -507,6 +511,19 @@ class CustomAttributes
 		};
 		class Attribute8
 		{
+			property="CYT_Outside_Info";
+			expression="if (is3den && !isNull findDisplay 313) then {[ 'Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute9
+		{
 			property="Init";
 			expression="if !(is3DEN) then {[] call compile _value;};";
 			class Value
@@ -518,7 +535,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute9
+		class Attribute10
 		{
 			property="CYT_Common_SFX";
 			expression="if (is3den && !isNull findDisplay 313) then {['Save the Mission to Apply your change !', 5] call BIS_fnc_3DENNotification;};";
@@ -531,7 +548,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=10;
+		nAttributes=11;
 	};
 };
 class Mission
@@ -551,8 +568,8 @@ class Mission
 		windForced=1;
 		year=2035;
 		day=28;
-		hour=13;
-		minute=37;
+		hour=12;
+		minute=0;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -11741,7 +11758,7 @@ class Mission
 							};
 							id=313;
 							type="3AS_Prop_Baseplate_30x30";
-							atlOffset=6.6321049;
+							atlOffset=6.6728878;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11881,7 +11898,7 @@ class Mission
 							};
 							id=5776;
 							type="3AS_Prop_Baseplate_30_GAR";
-							atlOffset=6.6534386;
+							atlOffset=6.6942215;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12639,7 +12656,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={374.29773,11.040783,316.80957};
+								position[]={374.375,11,316.5};
 								angles[]={0,1.5707964,0};
 							};
 							side="Empty";
@@ -12648,7 +12665,7 @@ class Mission
 							};
 							id=4710;
 							type="ls_25x25";
-							atlOffset=6.0407829;
+							atlOffset=6;
 						};
 						class Item1
 						{
@@ -12659,12 +12676,13 @@ class Mission
 								angles[]={0,3.1415925,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=4600;
 							type="3AS_Venator_Wall_1x2_Prop";
-							atlOffset=7.0934086;
+							atlOffset=0.018264771;
 						};
 						class Item2
 						{
@@ -12675,12 +12693,13 @@ class Mission
 								angles[]={0,4.712389,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=4601;
 							type="3AS_Venator_Wall_1x2_Prop";
-							atlOffset=7.0934086;
+							atlOffset=0.018264771;
 						};
 						class Item3
 						{
@@ -12691,12 +12710,13 @@ class Mission
 								angles[]={0,1.3113419e-007,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=4602;
 							type="3AS_Venator_Wall_1x2_Prop";
-							atlOffset=7.0934086;
+							atlOffset=0.018264771;
 						};
 						class Item4
 						{
@@ -12707,16 +12727,17 @@ class Mission
 								angles[]={0,1.5707963,0};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=4603;
 							type="3AS_Venator_Wall_1x2_Prop";
-							atlOffset=7.0934086;
+							atlOffset=0.018264771;
 						};
 					};
 					id=4594;
-					atlOffset=7.0276194;
+					atlOffset=7.0250702;
 				};
 				class Item11
 				{
@@ -19486,7 +19507,7 @@ class Mission
 							};
 							id=7308;
 							type="442_door_lock";
-							atlOffset=7.2560005;
+							atlOffset=7.2560015;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19507,7 +19528,7 @@ class Mission
 						};
 					};
 					id=3820;
-					atlOffset=7.3185616;
+					atlOffset=7.3186226;
 				};
 				class Item14
 				{
@@ -21999,6 +22020,7 @@ class Mission
 							name="Z_Bragg";
 							id=7163;
 							type="ModuleCurator_F";
+							atlOffset=0.040782928;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -22066,6 +22088,7 @@ class Mission
 							name="Z_Hermes";
 							id=7164;
 							type="ModuleCurator_F";
+							atlOffset=0.040782928;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -22133,6 +22156,7 @@ class Mission
 							name="Z_zeus_1";
 							id=7169;
 							type="ModuleCurator_F";
+							atlOffset=0.040782928;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -22200,6 +22224,7 @@ class Mission
 							name="Z_zeus_2";
 							id=7170;
 							type="ModuleCurator_F";
+							atlOffset=0.040782928;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -22267,6 +22292,7 @@ class Mission
 							name="Z_zeus_3";
 							id=7171;
 							type="ModuleCurator_F";
+							atlOffset=0.040782928;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -22327,3019 +22353,6 @@ class Mission
 						class Item5
 						{
 							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=50;
-								class Item0
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=7;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7173;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7174;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item2
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7175;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item3
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7176;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item4
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7177;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item5
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7178;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item6
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7179;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item7
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7180;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item8
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7181;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item9
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7182;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item10
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7183;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item11
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7184;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item12
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7185;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item13
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7186;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item14
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7187;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item15
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7188;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item16
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7189;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item17
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7190;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item18
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7191;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item19
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7192;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item20
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7193;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item21
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7194;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item22
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7195;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item23
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7196;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item24
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7197;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item25
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7198;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item26
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7199;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item27
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7200;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item28
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7201;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item29
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7202;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item30
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7203;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item31
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7204;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item32
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7205;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item33
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7206;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item34
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7207;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item35
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7208;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item36
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7209;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item37
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7210;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item38
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7211;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item39
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7212;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item40
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7213;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item41
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7214;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item42
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7215;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item43
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7216;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item44
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7217;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item45
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7218;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item46
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7219;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item47
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7220;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item48
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7221;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item49
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={375.96246,12.117366,316.52261};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										description=" @CloneTrooper";
-										isPlayable=1;
-									};
-									id=7222;
-									type="528th_Regs_Units_BodyGlove";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male02ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.05;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="face";
-											expression="_this setface _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="lsd_gar_cloneA_head";
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-							};
-							class Attributes
-							{
-							};
-							id=7172;
-						};
-						class Item6
-						{
-							dataType="Group";
 							side="Civilian";
 							class Entities
 							{
@@ -25387,6 +22400,7 @@ class Mission
 									};
 									id=7225;
 									type="JMSLLTE_empR_army_ofCpt";
+									atlOffset=0.040782928;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -25487,6 +22501,7 @@ class Mission
 									};
 									id=7226;
 									type="JMSLLTE_empR_army_ofLt";
+									atlOffset=0.040782928;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -25587,6 +22602,7 @@ class Mission
 									};
 									id=7227;
 									type="JMSLLTE_empR_army_ofLt";
+									atlOffset=0.040782928;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -25649,9 +22665,1435 @@ class Mission
 							{
 							};
 							id=7224;
+							atlOffset=0.040782928;
+						};
+						class Item6
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=30;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=3;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7354;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7310;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7312;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7314;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7316;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7318;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7320;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7322;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7324;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7326;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item10
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7328;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item11
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7330;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item12
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7332;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item13
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7334;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item14
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7336;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item15
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7338;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item16
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7340;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item17
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7342;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item18
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7344;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item19
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7346;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item20
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7348;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item21
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7350;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item22
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7352;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item23
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7356;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7358;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item25
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7360;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item26
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7362;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item27
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7364;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item28
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7366;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item29
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={376.25,12.001439,315.29999};
+									};
+									side="West";
+									flags=1;
+									class Attributes
+									{
+										isPlayable=1;
+									};
+									id=7368;
+									type="528th_Unit_Regs_Clone";
+									atlOffset=7;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+							};
+							class Attributes
+							{
+							};
+							id=7353;
+							atlOffset=7;
 						};
 					};
 					id=7162;
+					atlOffset=7.0579634;
 				};
 				class Item18
 				{
@@ -26460,370 +24902,6 @@ class Mission
 				class Item22
 				{
 					dataType="Layer";
-					name="Loadout";
-					class Entities
-					{
-						items=21;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={406.18042,13.298377,361.66217};
-								angles[]={0,1.3962635,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7283;
-							type="528th_LoadBox_AA";
-							atlOffset=0.88726044;
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={408.99564,13.298399,361.61826};
-								angles[]={0,1.7453293,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7284;
-							type="528th_LoadBox_AT";
-							atlOffset=0.88728237;
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.53174,13.298399,363.99753};
-								angles[]={0,3.1415925,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7285;
-							type="528th_LoadBox_Demolisseur";
-							atlOffset=0.88728237;
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.33615,13.298399,356.02942};
-								angles[]={0,3.1415932,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7286;
-							type="528th_LoadBox_ExpertEnCommunication";
-							atlOffset=0.88728237;
-						};
-						class Item4
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={407.64554,13.298399,338.51901};
-								angles[]={0,1.5707964,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7287;
-							type="528th_LoadBox_Fantassin";
-							atlOffset=0.88728237;
-						};
-						class Item5
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.36124,13.298399,360.10736};
-								angles[]={0,3.0543261,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7288;
-							type="528th_LoadBox_Grenadier";
-							atlOffset=0.88728237;
-						};
-						class Item6
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={400.89975,13.298399,338.96759};
-								angles[]={0,6.1959195,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7289;
-							type="528th_LoadBox_HeavyShield";
-							atlOffset=0.88728237;
-						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={400.88916,13.298399,341.32123};
-								angles[]={0,0.087266654,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7290;
-							type="528th_LoadBox_Heavy";
-							atlOffset=0.88728237;
-						};
-						class Item8
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={413.74692,13.298399,366.20844};
-								angles[]={0,2.3561945,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7291;
-							type="528th_LoadBox_IngenieurDeCombat";
-							atlOffset=0.88728237;
-						};
-						class Item9
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.34106,13.298399,336.3035};
-								angles[]={0,8.9406981e-008,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7292;
-							type="528th_LoadBox_Krayt";
-							atlOffset=0.88728237;
-						};
-						class Item10
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={401.00098,13.298399,361.40125};
-								angles[]={0,3.4033926,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7293;
-							type="528th_LoadBox_Medecin";
-							atlOffset=0.88728237;
-						};
-						class Item11
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={413.5329,13.298399,334.16348};
-								angles[]={0,3.926991,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7294;
-							type="528th_LoadBox_Mykal";
-							atlOffset=0.88728237;
-						};
-						class Item12
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={400.90207,13.298399,358.90717};
-								angles[]={0,3.0543265,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7295;
-							type="528th_LoadBox_Nysillin";
-							atlOffset=0.88728237;
-						};
-						class Item13
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.27426,13.298399,353.90067};
-								angles[]={0,3.0543261,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7296;
-							type="528th_LoadBox_OperateurRadio";
-							atlOffset=0.88728237;
-						};
-						class Item14
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.40259,13.298399,343.98489};
-								angles[]={0,3.141593,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7297;
-							type="528th_LoadBox_Pilote";
-							atlOffset=0.88728237;
-						};
-						class Item15
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={411.4884,13.298399,366.8429};
-								angles[]={0,1.5707964,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7298;
-							type="528th_LoadBox_Sapeur";
-							atlOffset=0.88728237;
-						};
-						class Item16
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.44669,13.298399,339.98978};
-								angles[]={0,3.1415925,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7299;
-							type="528th_LoadBox_Shield";
-							atlOffset=0.88728237;
-						};
-						class Item17
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={411.4765,13.298399,333.22424};
-								angles[]={0,1.5707965,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7300;
-							type="528th_LoadBox_Vornskr";
-							atlOffset=0.88728237;
-						};
-						class Item18
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={414.42932,13.298399,346.20374};
-								angles[]={0,6.1086531,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
-							};
-							id=7301;
-							type="528th_LoadBox_Zerek";
-							atlOffset=0.88728237;
-						};
-						class Item19
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={400.60208,12.411833,345.10452};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=7305;
-							type="528th_SupplyBox_Empty";
-						};
-						class Item20
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={400.60208,12.411833,355.24176};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=7304;
-							type="528th_SupplyBox_Empty";
-						};
-					};
-					id=7239;
-					atlOffset=0.22181988;
-				};
-				class Item23
-				{
-					dataType="Layer";
 					name="Arsenal_1";
 					class Entities
 					{
@@ -26909,11 +24987,22 @@ class Mission
 								items=2;
 								class Item0
 								{
+									dataType="Comment";
+									class PositionInfo
+									{
+										position[]={379.75,13.375,386.5};
+									};
+									title="Arsenal unlimited";
+									id=7153;
+									atlOffset=0.9681921;
+								};
+								class Item1
+								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={379.67477,13.508725,386.52194};
-										angles[]={0,4.7123895,0};
+										position[]={379.75,13.418401,386.5};
+										angles[]={0,5.410521,0};
 									};
 									side="Empty";
 									class Attributes
@@ -26922,9 +25011,9 @@ class Mission
 										name="arsenalbox_0";
 										disableSimulation=1;
 									};
-									id=7281;
-									type="k_porg";
-									atlOffset=0.94275093;
+									id=7373;
+									type="442_tseries_head";
+									atlOffset=0.9681921;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -26982,28 +25071,381 @@ class Mission
 										nAttributes=4;
 									};
 								};
-								class Item1
-								{
-									dataType="Comment";
-									class PositionInfo
-									{
-										position[]={379.66757,13.349158,386.5387};
-									};
-									title="Arsenal unlimited";
-									id=7153;
-									atlOffset=0.94235039;
-								};
 							};
 							id=7152;
-							atlOffset=0.94255066;
+							atlOffset=0.9681921;
 						};
 					};
 					id=7148;
-					atlOffset=7.8802376;
+					atlOffset=7.8930588;
+				};
+				class Item23
+				{
+					dataType="Layer";
+					name="Loadout";
+					class Entities
+					{
+						items=21;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={408.32837,12.125,361.83347};
+								angles[]={0,2.3841858e-007,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7376;
+							type="528th_LoadBox_AA";
+							atlOffset=7.125;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={406.82837,12.125,361.83347};
+								angles[]={0,2.3841858e-007,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7377;
+							type="528th_LoadBox_AT";
+							atlOffset=7.125;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,366.875};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7378;
+							type="528th_LoadBox_Demolisseur";
+							atlOffset=7.125;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,359.34015};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7379;
+							type="528th_LoadBox_ExpertEnCommunication";
+							atlOffset=7.125;
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={407.59003,12.125,338.40411};
+								angles[]={0,3.1415927,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7380;
+							type="528th_LoadBox_Fantassin";
+							atlOffset=7.125;
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,345.0759};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7381;
+							type="528th_LoadBox_Grenadier";
+							atlOffset=7.125;
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.79501,12.125,340.849};
+								angles[]={0,4.7123895,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7382;
+							type="528th_LoadBox_HeavyShield";
+							atlOffset=7.125;
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.79501,12.125,339.349};
+								angles[]={0,4.7123895,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7383;
+							type="528th_LoadBox_Heavy";
+							atlOffset=7.125;
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,365.375};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7384;
+							type="528th_LoadBox_IngenieurDeCombat";
+							atlOffset=7.125;
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,333.33301};
+								angles[]={0,1.5707964,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7385;
+							type="528th_LoadBox_Krayt";
+							atlOffset=7.125;
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.79538,12.125,360.96057};
+								angles[]={0,4.7123895,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7386;
+							type="528th_LoadBox_Medecin";
+							atlOffset=7.125;
+						};
+						class Item11
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,334.83301};
+								angles[]={0,1.5707964,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7387;
+							type="528th_LoadBox_Mykal";
+							atlOffset=7.125;
+						};
+						class Item12
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.79501,12.125,359.461};
+								angles[]={0,4.7123895,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7388;
+							type="528th_LoadBox_Nysillin";
+							atlOffset=7.125;
+						};
+						class Item13
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,360.84015};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7389;
+							type="528th_LoadBox_OperateurRadio";
+							atlOffset=7.125;
+						};
+						class Item14
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,340.8414};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7390;
+							type="528th_LoadBox_Pilote";
+							atlOffset=7.125;
+						};
+						class Item15
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,363.875};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7391;
+							type="528th_LoadBox_Sapeur";
+							atlOffset=7.125;
+						};
+						class Item16
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,355.1048};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7392;
+							type="528th_LoadBox_Shield";
+							atlOffset=7.125;
+						};
+						class Item17
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,336.33301};
+								angles[]={0,1.5707964,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7393;
+							type="528th_LoadBox_Vornskr";
+							atlOffset=7.125;
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={414.375,12.125,339.3414};
+								angles[]={0,1.5707965,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="null = [this] execVM ""528th_Script\Loadout.sqf"";";
+							};
+							id=7394;
+							type="528th_LoadBox_Zerek";
+							atlOffset=7.125;
+						};
+						class Item19
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.60208,12.411833,345.10452};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=7305;
+							type="528th_SupplyBox_Empty";
+						};
+						class Item20
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={400.60208,12.411833,355.24176};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=7304;
+							type="528th_SupplyBox_Empty";
+						};
+					};
+					id=7375;
+					atlOffset=7.3395882;
 				};
 			};
 			id=7086;
-			atlOffset=8.398387;
+			atlOffset=8.1926403;
 		};
 	};
 	class Connections
