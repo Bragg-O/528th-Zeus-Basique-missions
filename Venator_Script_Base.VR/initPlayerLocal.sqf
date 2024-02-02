@@ -19,6 +19,7 @@ addMissionEventHandler ["EntityRespawned", {
     } else {
       _unit setUnitLoadout loadoutAtStart;
     };
+    sleep 300;
     {deleteVehicle _x} forEach nearestObjects [(getPosATL _corpse),["WeaponHolderSimulated","groundWeaponHolder"],5];
     deleteVehicle _corpse;
   };
